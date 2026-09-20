@@ -1,0 +1,43 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Used-car marketplace REST API (Express, Prisma, PostgreSQL)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed:admin": "node scripts/seed-super-admin.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.12.1",
+    "multer": "^2.4.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "globals": "^17.12.0",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.9.8",
+    "prisma": "^6.19.3"
+  },
+  "private": "true",
+  "engines": {
+    "node": ">=20"
+  }
+}
