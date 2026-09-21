@@ -26,6 +26,12 @@ class ApiError extends Error {
   static conflict(message, opts) {
     return new ApiError(409, message, opts);
   }
+
+  // For rules that need database state to check, so zod cannot express them. Uses the same body
+  // shape as a zod failure: details is [{ path, message }].
+  static unprocessable(message, opts) {
+    return new ApiError(422, message, opts);
+  }
 }
 
 module.exports = ApiError;

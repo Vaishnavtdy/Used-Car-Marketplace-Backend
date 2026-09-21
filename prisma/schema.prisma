@@ -77,14 +77,26 @@ model RefreshToken {
   @@index([familyId])
 }
 
+// Master list of car makes. Names are unique case-insensitively (see the Brand_name_lower_key index
+// in the brand_master migration, which Prisma cannot express).
+model Brand {
+  id   Int    @id @default(autoincrement())
+  name String
+
+  cars Car[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
 model Car {
   id       Int @id @default(autoincrement())
   sellerId Int
+  brandId  Int
 
   title       String
   description String?
 
-  brand   String
   model   String
   variant String?
   year    Int
@@ -102,6 +114,7 @@ model Car {
   publishedAt DateTime?
 
   seller    User       @relation(fields: [sellerId], references: [id])
+  brand     Brand      @relation(fields: [brandId], references: [id])
   images    CarImage[]
   favorites Favorite[]
 
@@ -110,7 +123,7 @@ model Car {
 
   @@index([status, publishedAt])
   @@index([sellerId])
-  @@index([brand, model])
+  @@index([brandId, model])
   @@index([price])
   @@index([year])
 }
@@ -138,4 +151,133 @@ model Favorite {
   car  Car  @relation(fields: [carId], references: [id], onDelete: Cascade)
 
   @@unique([userId, carId])
+}
+
+// ---------------------------------------------------------------------------------------------
+// Home Page CMS
+//
+// Single-instance sections live in HomePageContent, one row per section. The unique sectionType
+// is what guarantees there is never a duplicate, and rows are created by the migration and only
+// ever updated, never created or deleted through the API. Which of the text columns a section
+// actually uses is defined in src/config/homeCms.js; the unused ones stay NULL.
+//
+// Repeatable content gets its own table each, ordered by displayOrder and hidden when
+// isActive = false. displayOrder is deliberately not unique so items can be reordered without
+// juggling temporary values. Extra CHECK constraints (see the home_page_cms migration) cover what
+// Prisma cannot express.
+// ---------------------------------------------------------------------------------------------
+
+enum HomeSectionType {
+  HERO
+  FEATURED
+  BRANDS
+  WHY_CHOOSE_US
+  HOW_IT_WORKS
+  BUDGET
+  JUST_LISTED
+  TESTIMONIALS
+  EXPLORE
+}
+
+model HomePageContent {
+  id              Int             @id @default(autoincrement())
+  sectionType     HomeSectionType @unique
+  sectionTitle    String?         @db.VarChar(80)
+  title           String          @db.VarChar(200)
+  highlightedText String?         @db.VarChar(100)
+  description     String?         @db.VarChar(600)
+  buttonText      String?         @db.VarChar(40)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model HeroStat {
+  id           Int     @id @default(autoincrement())
+  label        String  @db.VarChar(50)
+  value        String  @db.VarChar(30)
+  displayOrder Int
+  isActive     Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([isActive, displayOrder])
+}
+
+// Named HomeBrand because Brand is the master list of car makes. A home page brand is only a
+// tile (name + photo); the car count on it is derived from the listings, not stored.
+// Names are unique case-insensitively via the HomeBrand_name_lower_key index.
+model HomeBrand {
+  id           Int     @id @default(autoincrement())
+  name         String  @db.VarChar(50)
+  imageUrl     String  @db.VarChar(2048)
+  displayOrder Int
+  isActive     Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([isActive, displayOrder])
+}
+
+model WhyChooseUsItem {
+  id           Int     @id @default(autoincrement())
+  title        String  @db.VarChar(100)
+  description  String  @db.VarChar(400)
+  icon         String  @db.VarChar(40)
+  displayOrder Int
+  isActive     Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([isActive, displayOrder])
+}
+
+// The step number shown on the site is the item's position, so it follows reordering.
+model HowItWorksStep {
+  id           Int     @id @default(autoincrement())
+  title        String  @db.VarChar(100)
+  description  String  @db.VarChar(400)
+  icon         String  @db.VarChar(40)
+  displayOrder Int
+  isActive     Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([isActive, displayOrder])
+}
+
+// A price band in lakhs (1 lakh = 100,000). Either bound may be NULL for an open-ended band.
+model BudgetItem {
+  id           Int      @id @default(autoincrement())
+  label        String   @db.VarChar(60)
+  minPriceLakh Decimal? @db.Decimal(8, 2)
+  maxPriceLakh Decimal? @db.Decimal(8, 2)
+  displayOrder Int
+  isActive     Boolean  @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([isActive, displayOrder])
+}
+
+model Testimonial {
+  id           Int     @id @default(autoincrement())
+  name         String  @db.VarChar(100)
+  location     String  @db.VarChar(100)
+  car          String  @db.VarChar(100)
+  rating       Int
+  review       String  @db.VarChar(1000)
+  avatarUrl    String  @db.VarChar(2048)
+  displayOrder Int
+  isActive     Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([isActive, displayOrder])
 }

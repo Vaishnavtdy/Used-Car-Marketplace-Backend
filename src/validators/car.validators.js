@@ -19,7 +19,7 @@ const year = z
 const fields = {
   title: z.string().trim().min(3).max(150),
   description: text(5000),
-  brand: text(50),
+  brandId: z.number().int().positive(),
   model: text(50),
   variant: text(50),
   year,
@@ -35,7 +35,7 @@ const fields = {
 const createCar = z.object({
   title: fields.title,
   description: fields.description.optional(),
-  brand: fields.brand,
+  brandId: fields.brandId,
   model: fields.model,
   variant: fields.variant.optional(),
   year: fields.year,
@@ -53,7 +53,7 @@ const updateCar = atLeastOneField(
   z.object({
     title: fields.title.optional(),
     description: fields.description.nullable().optional(),
-    brand: fields.brand.optional(),
+    brandId: fields.brandId.optional(),
     model: fields.model.optional(),
     variant: fields.variant.nullable().optional(),
     year: fields.year.optional(),
@@ -71,6 +71,7 @@ const updateStatus = z.object({ status: z.enum(SETTABLE_STATUSES) });
 
 const listShape = paginationQuery({ defaultLimit: 20, maxLimit: 50 }).extend({
   q: z.string().trim().min(1).max(100).optional(),
+  brandId: z.coerce.number().int().positive().optional(),
   brand: text(50).optional(),
   model: text(50).optional(),
   fuelType: fields.fuelType.optional(),

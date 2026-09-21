@@ -21,12 +21,13 @@ const SORT_ORDERS = {
 };
 
 const sellerSelect = { id: true, name: true, phone: true };
+const brandSelect = { id: true, name: true };
 const imageSelect = { id: true, url: true, isPrimary: true, position: true };
 
 const summarySelect = {
   id: true,
   title: true,
-  brand: true,
+  brand: { select: brandSelect },
   model: true,
   variant: true,
   year: true,
@@ -70,7 +71,8 @@ const equalsInsensitive = (value) => ({ equals: value, mode: "insensitive" });
 const buildWhere = (f) => ({
   ...(f.status && { status: f.status }),
   ...(f.sellerId && { sellerId: f.sellerId }),
-  ...(f.brand && { brand: equalsInsensitive(f.brand) }),
+  ...(f.brandId && { brandId: f.brandId }),
+  ...(f.brand && { brand: { name: equalsInsensitive(f.brand) } }),
   ...(f.model && { model: equalsInsensitive(f.model) }),
   ...(f.fuelType && { fuelType: f.fuelType }),
   ...(f.transmission && { transmission: f.transmission }),
@@ -79,9 +81,11 @@ const buildWhere = (f) => ({
   ...(range(f.minYear, f.maxYear) && { year: range(f.minYear, f.maxYear) }),
   ...(f.maxMileage !== undefined && { mileage: { lte: f.maxMileage } }),
   ...(f.q && {
-    OR: ["title", "brand", "model"].map((field) => ({
-      [field]: { contains: f.q, mode: "insensitive" },
-    })),
+    OR: [
+      { title: { contains: f.q, mode: "insensitive" } },
+      { brand: { name: { contains: f.q, mode: "insensitive" } } },
+      { model: { contains: f.q, mode: "insensitive" } },
+    ],
   }),
 });
 
@@ -113,18 +117,35 @@ const getById = async (id, { includeAllStatuses }) => {
   return serializeDetail(car);
 };
 
+// A foreign-key failure on a car write can only mean the brandId does not exist.
+const withBrandCheck = async (write) => {
+  try {
+    return await write();
+  } catch (err) {
+    if (err.code !== "P2003") throw err;
+    throw new ApiError(422, "Validation failed", {
+      code: "VALIDATION_ERROR",
+      details: [{ path: "brandId", message: "Brand does not exist" }],
+    });
+  }
+};
+
 // New listings are always DRAFT and belong to the creating user; clients cannot set either.
 const create = async (actor, data) => {
-  const car = await prisma.car.create({
-    data: { ...data, sellerId: actor.id, status: "DRAFT" },
-    select: detailSelect,
-  });
+  const car = await withBrandCheck(() =>
+    prisma.car.create({
+      data: { ...data, sellerId: actor.id, status: "DRAFT" },
+      select: detailSelect,
+    })
+  );
   return serializeDetail(car);
 };
 
 // Prisma raises P2025 for an unknown id, which the error handler turns into a 404.
 const update = async (id, data) => {
-  const car = await prisma.car.update({ where: { id }, data, select: detailSelect });
+  const car = await withBrandCheck(() =>
+    prisma.car.update({ where: { id }, data, select: detailSelect })
+  );
   return serializeDetail(car);
 };
 

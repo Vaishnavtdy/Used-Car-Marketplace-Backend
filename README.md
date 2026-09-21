@@ -8,7 +8,7 @@ REST API for a used-car marketplace. Express 5, Prisma 6, PostgreSQL, JWT auth.
 cd backend
 npm install
 cp .env.example .env        # then fill in DATABASE_URL and JWT_SECRET
-npx prisma migrate deploy   # apply migrations (use `migrate dev` while developing)
+npx prisma migrate deploy   # apply migrations (also loads the Home Page CMS defaults)
 npm run seed:admin          # create the initial super admin (see below)
 npm run dev                 # or: npm start
 ```
@@ -57,7 +57,18 @@ Authenticated routes take `Authorization: Bearer <accessToken>`. The refresh tok
 
 **Users** (`/api/users`): `PATCH me` (any user); `GET /`, `POST /`, `GET /:id`, `PATCH /:id`, `POST /:id/reset-password` (ADMIN and SUPER_ADMIN).
 
-**Cars** (`/api/cars`):
+**Brands** (`/api/brands`): the master list of car makes. Every car links to one by `brandId`.
+
+| Route         | Access | Notes                                                                 |
+| ------------- | ------ | --------------------------------------------------------------------- |
+| `GET /`       | public | All brands by name, with `carCount` (ACTIVE cars only); not paginated |
+| `POST /`      | admin  | `{ name }`; names are unique ignoring case                            |
+| `PATCH /:id`  | admin  | `{ name }`                                                            |
+| `DELETE /:id` | admin  | 409 `BRAND_IN_USE` while any car (any status) still uses the brand    |
+
+Create brands before adding cars; there is no default list.
+
+**Cars** (`/api/cars`): cars are created and updated with `brandId`, and responses return `brand: { id, name }`.
 
 | Route                                | Access | Notes                                                              |
 | ------------------------------------ | ------ | ------------------------------------------------------------------ |
@@ -72,17 +83,64 @@ Authenticated routes take `Authorization: Bearer <accessToken>`. The refresh tok
 | `PATCH /:id/images/:imageId/primary` | admin  |                                                                    |
 | `DELETE /:id/images/:imageId`        | admin  |                                                                    |
 
-List filters: `page`, `limit` (max 50), `q`, `brand`, `model`, `fuelType`, `transmission`, `registrationCity`,
+List filters: `page`, `limit` (max 50), `q` (title, brand name or model), `brandId`, `brand` (name), `model`, `fuelType`, `transmission`, `registrationCity`,
 `minPrice`, `maxPrice`, `minYear`, `maxYear`, `maxMileage`, `sort` (`newest`, `price_asc`, `price_desc`, `year_desc`, `mileage_asc`).
 
 Uploaded images are served from `/uploads/...`. In production, serve that directory from a CDN or reverse
 proxy on a persistent volume.
 
+## Home Page CMS
+
+Everything written on the website's home page (headings, descriptions, button labels, and the repeatable
+lists: hero stats, brand tiles, why-choose-us cards, how-it-works steps, budget bands, testimonials) is
+stored in the database and edited from the admin UI in `frontend/` (`/admin`).
+
+**Defaults.** The `home_page_cms` migration creates the tables _and_ inserts the content the site showed
+before it became CMS-driven, so `npx prisma migrate deploy` gives a working home page with no extra step.
+The API can edit these rows but never creates or deletes the single-instance ones.
+
+**Two kinds of content**
+
+| Kind                 | Storage                                                                                                   | API                  |
+| -------------------- | --------------------------------------------------------------------------------------------------------- | -------------------- |
+| Single-instance      | `HomePageContent`, one row per `HomeSectionType` (unique)                                                 | `GET` and `PUT` only |
+| Repeatable (6 lists) | one table each: `HeroStat`, `HomeBrand`, `WhyChooseUsItem`, `HowItWorksStep`, `BudgetItem`, `Testimonial` | full CRUD + reorder  |
+
+**Routes** (`/api/cms/home`). Only the first is public; everything else needs an ADMIN or SUPER_ADMIN token.
+
+| Route                                                                                                                                                  | Notes                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
+| `GET /`                                                                                                                                                | public. All nine sections with their **active** items in order: what the website renders      |
+| `GET /meta`                                                                                                                                            | `{ icons }`: the icon keys items may use                                                      |
+| `GET` / `PUT /hero`, `/featured`, `/brands-content`, `/why-choose-us`, `/how-it-works`, `/budget`, `/just-listed`, `/testimonials-content`, `/explore` | single-instance sections. `PUT` replaces every field the section has and rejects any others   |
+| `GET /hero-stats`, `/brands`, `/why-choose-us-items`, `/how-it-works-steps`, `/budget-items`, `/testimonials`                                          | list **all** items (including hidden), ordered                                                |
+| `POST /<collection>`                                                                                                                                   | create; without `displayOrder` the item is appended                                           |
+| `PUT /<collection>/:id`                                                                                                                                | update any subset of fields, so `{ "isActive": false }` hides an item                         |
+| `DELETE /<collection>/:id`                                                                                                                             |                                                                                               |
+| `PUT /<collection>/reorder`                                                                                                                            | `{ ids: [...] }`, every id in the new order (409 `ORDER_OUT_OF_DATE` if the list has changed) |
+
+**Section fields.** `sectionTitle` (the small label), `title`, `highlightedText`, `description`, `buttonText`;
+each section has the subset shown in `src/config/homeCms.js`. `highlightedText` is the part of `title` shown
+in the accent colour, so it must occur in the title exactly (it may be empty). Only the hero `title` may
+contain line breaks (up to 3 lines).
+
+**Validation** (zod in `validators/homeCms.validators.js`, repeated as CHECK constraints in the database
+where possible): required and trimmed text with length limits; `displayOrder` an integer 0-9999; `rating` 1-5;
+`icon` one of `GET /meta`; image URLs must be `http(s)://` (no credentials) or `/uploads/...`; a budget band
+needs at least one bound in lakhs and `min < max`; brand names are unique ignoring case.
+
+**Frontend contract.** Items are returned in `displayOrder` (ties by id) and only when `isActive`. The
+number on a how-it-works step is its position, not a stored value.
+
+**Adding a section later.** Add an entry to `SECTIONS` (or `COLLECTIONS`) in `src/config/homeCms.js`, extend the
+Prisma enum/model, and write a migration that also inserts its default content. Validators, services, routes
+are generated from the registry.
+
 ## Project layout
 
 ```
 src/
-  config/       env validation, Prisma client
+  config/       env validation, Prisma client, Home Page CMS registry (homeCms.js)
   routes/       route tables (routes/index.js mounts everything under /api)
   controllers/  thin HTTP layer
   services/     business logic and database access
