@@ -16,6 +16,9 @@ const requireAdmin = [authenticate(), requireRole(...ADMIN_ROLES)];
 // Public catalogue
 router.get("/", validate({ query: v.listQuery }), carController.list);
 
+// What the filters can offer, with counts. Declared before "/:id", like "manage".
+router.get("/facets", carController.facets);
+
 // Declared before "/:id" so "manage" isn't parsed as an id
 router.get("/manage", ...requireAdmin, validate({ query: v.manageQuery }), carController.manage);
 

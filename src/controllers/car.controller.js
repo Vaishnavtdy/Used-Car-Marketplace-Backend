@@ -39,4 +39,8 @@ const remove = async (req, res) => {
   response.noContent(res);
 };
 
-module.exports = { list, manage, getById, create, update, changeStatus, remove };
+const facets = async (req, res) => {
+  response.ok(res, await carService.facets());
+};
+
+module.exports = { list, manage, getById, create, update, changeStatus, remove, facets };

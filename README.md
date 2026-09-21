@@ -32,12 +32,13 @@ Requires Node 20+ and PostgreSQL.
 
 ## Scripts
 
-| Script                              | Purpose                             |
-| ----------------------------------- | ----------------------------------- |
-| `npm run dev` / `npm start`         | Run with nodemon / plain node       |
-| `npm run seed:admin`                | Create the super admin (idempotent) |
-| `npm run lint` / `npm run lint:fix` | ESLint                              |
-| `npm run format` / `format:check`   | Prettier                            |
+| Script                              | Purpose                              |
+| ----------------------------------- | ------------------------------------ |
+| `npm run dev` / `npm start`         | Run with nodemon / plain node        |
+| `npm run seed:admin`                | Create the super admin (idempotent)  |
+| `npm run seed:demo-cars`            | Import the 26 demo cars (idempotent) |
+| `npm run lint` / `npm run lint:fix` | ESLint                               |
+| `npm run format` / `format:check`   | Prettier                             |
 
 ### Creating the super admin
 
@@ -66,13 +67,14 @@ Authenticated routes take `Authorization: Bearer <accessToken>`. The refresh tok
 | `PATCH /:id`  | admin  | `{ name }`                                                            |
 | `DELETE /:id` | admin  | 409 `BRAND_IN_USE` while any car (any status) still uses the brand    |
 
-Create brands before adding cars; there is no default list.
+Create brands before adding cars. `npm run seed:demo-cars` adds the brands its demo cars need.
 
 **Cars** (`/api/cars`): cars are created and updated with `brandId`, and responses return `brand: { id, name }`.
 
 | Route                                | Access | Notes                                                              |
 | ------------------------------------ | ------ | ------------------------------------------------------------------ |
 | `GET /`                              | public | ACTIVE only; filters, sort, pagination                             |
+| `GET /facets`                        | public | Filter options with counts, over ACTIVE cars (see below)           |
 | `GET /:id`                           | public | Non-ACTIVE cars are visible to admins only                         |
 | `GET /manage`                        | admin  | All statuses; adds `status`, `sellerId` filters                    |
 | `POST /`                             | admin  | Creates a DRAFT owned by the caller                                |
@@ -83,8 +85,24 @@ Create brands before adding cars; there is no default list.
 | `PATCH /:id/images/:imageId/primary` | admin  |                                                                    |
 | `DELETE /:id/images/:imageId`        | admin  |                                                                    |
 
-List filters: `page`, `limit` (max 50), `q` (title, brand name or model), `brandId`, `brand` (name), `model`, `fuelType`, `transmission`, `registrationCity`,
-`minPrice`, `maxPrice`, `minYear`, `maxYear`, `maxMileage`, `sort` (`newest`, `price_asc`, `price_desc`, `year_desc`, `mileage_asc`).
+List filters: `page`, `limit` (max 50), `q`, `ids`, `brandId`, `brand`, `model`, `fuelType`, `transmission`, `bodyType`, `registrationCity`,
+`featured` (`true`), `minPrice`, `maxPrice`, `minYear`, `maxYear`, `minRegYear`, `maxRegYear`, `maxMileage`, `sort` (`newest`, `price_asc`, `price_desc`, `year_desc`, `mileage_asc`).
+
+- `brand`, `fuelType`, `transmission`, `bodyType`, `registrationCity` and `ids` take comma-separated lists (`brand=BMW,Audi`); names match ignoring case.
+- `q` is split into words and every word has to match something on the car: title, brand, model, variant, colour, city, a fuel / gearbox / body type ("diesel suv"), or a 4-digit year.
+
+A car also carries `bodyType` (`SEDAN`, `SUV`, `HATCHBACK`, `COUPE`, `WAGON`), `engine`, `power`, `registrationYear` (not before `year`),
+`isFeatured` (the home page's hand-picked row) and `features`: a list of `{ category, name }` (`SAFETY`, `COMFORT`, `INTERIOR`,
+`EXTERIOR`, `TECHNOLOGY`) in display order. Sending `features` on update replaces the list; leaving it out keeps it. All of these are optional.
+Only the detail response has `features`, `engine`, `power` and `description`; list results carry what a card needs plus `primaryImage`.
+
+`GET /facets` returns `{ total, brands: [{ id, name, count, image }], fuelTypes, transmissions, bodyTypes, cities: [{ value, count }], models: [{ brand, model }] }`,
+which the storefront uses for its filter panel and search menus (`image` is a photo of a featured or the newest car of the brand).
+
+A photo may live at an external URL (`storageKey` is then empty and there is no file to delete), which is how the demo cars work.
+
+**Demo inventory.** `npm run seed:demo-cars` imports the 26 cars the storefront originally shipped with, as published listings owned by the
+super admin (or `IMPORT_SELLER_EMAIL`). It is safe to run again: a car whose title already exists is skipped.
 
 Uploaded images are served from `/uploads/...`. In production, serve that directory from a CDN or reverse
 proxy on a persistent volume.
@@ -127,7 +145,12 @@ contain line breaks (up to 3 lines).
 **Validation** (zod in `validators/homeCms.validators.js`, repeated as CHECK constraints in the database
 where possible): required and trimmed text with length limits; `displayOrder` an integer 0-9999; `rating` 1-5;
 `icon` one of `GET /meta`; image URLs must be `http(s)://` (no credentials) or `/uploads/...`; a budget band
-needs at least one bound in lakhs and `min < max`; brand names are unique ignoring case.
+needs at least one bound in lakhs and `min < max`.
+
+**Brands are master data.** The home page's brand tiles (`/brands` under `/api/cms/home`) do not hold a brand
+name: each one points at a master `Brand` (`{ brandId, imageUrl }`, admin responses carry `brand: { id, name }`),
+so renaming a brand in `/api/brands` renames its tile, a brand can be on the home page once (409 otherwise),
+an unknown `brandId` is a 422, and deleting the master brand removes its tile. Create brands in `/api/brands` first.
 
 **Frontend contract.** Items are returned in `displayOrder` (ties by id) and only when `isActive`. The
 number on a how-it-works step is its position, not a stored value.

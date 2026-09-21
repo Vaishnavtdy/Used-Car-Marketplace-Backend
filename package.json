@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "seed:demo-cars": "node scripts/import-demo-cars.js"
   },
   "type": "commonjs",
   "dependencies": {

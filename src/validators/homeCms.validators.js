@@ -100,7 +100,7 @@ const collectionShapes = {
     value: text(30),
   },
   brands: {
-    name: text(50),
+    brandId: z.number().int().positive(),
     imageUrl,
   },
   whyChooseUsItems: {

@@ -114,7 +114,8 @@ const remove = async (carId, imageId) => {
     }
   });
 
-  await storage.removeQuietly(() => storage.remove(image.storageKey));
+  // Only files this API stored have a key; a photo at an external URL has nothing to clean up.
+  if (image.storageKey) await storage.removeQuietly(() => storage.remove(image.storageKey));
 
   return listForCar(carId);
 };

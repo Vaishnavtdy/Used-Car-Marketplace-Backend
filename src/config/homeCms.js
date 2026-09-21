@@ -80,6 +80,9 @@ const SECTIONS = [
 //   section - the SECTIONS key it belongs to; prop is where it sits inside that section's
 //             public payload
 //   publicFields - what the public endpoint exposes (admins get the whole row)
+//   include / toPublic - for a collection whose items point at other data: what to load with each
+//             row, and how to build the public item from it (instead of publicFields)
+//   duplicateMessage / foreignKey - the friendly errors for a unique or foreign-key violation
 const COLLECTIONS = [
   {
     name: "heroStats",
@@ -95,8 +98,16 @@ const COLLECTIONS = [
     model: "homeBrand",
     section: "brands",
     prop: "items",
-    publicFields: ["id", "name", "imageUrl"],
-    duplicateMessage: "A brand with this name already exists",
+    // A tile points at a master Brand; the name comes from it
+    include: { brand: { select: { id: true, name: true } } },
+    toPublic: (row) => ({
+      id: row.id,
+      brandId: row.brandId,
+      name: row.brand.name,
+      imageUrl: row.imageUrl,
+    }),
+    duplicateMessage: "That brand is already on the home page",
+    foreignKey: { field: "brandId", message: "Brand does not exist" },
   },
   {
     name: "whyChooseUsItems",

@@ -1,0 +1,3440 @@
+[
+  {
+    "brand": "BMW",
+    "model": "5 Series",
+    "variant": "530i M Sport",
+    "year": 2021,
+    "registrationYear": 2021,
+    "price": 5290000,
+    "mileage": 21400,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SEDAN",
+    "engine": "2.0L TwinPower Turbo",
+    "power": "252 PS · 350 Nm",
+    "ownership": 1,
+    "color": "Mineral White",
+    "registrationCity": "Mumbai",
+    "description": "A single-owner 530i M Sport in Mineral White that still feels showroom-fresh. The 2.0-litre turbo delivers effortless overtakes yet settles into a calm, refined cruise, and the M Sport package sharpens the looks without costing ride quality. Complete service records are available for inspection and the cabin shows almost no wear.",
+    "isFeatured": true,
+    "publishedAt": "2026-09-05",
+    "imageUrl": "https://images.unsplash.com/photo-1555215695-3004980ad54e",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "8 airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Electronic stability program"
+      },
+      {
+        "category": "SAFETY",
+        "name": "360° surround camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Lane-keep assist"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Blind-spot monitoring"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Adaptive cruise control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "4-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Ventilated & massaging seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Air suspension"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Soft-close doors"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear sunshades"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Nappa leather upholstery"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Wood / carbon trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Heated steering wheel"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Panoramic sunroof"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "M Sport aerodynamic package"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Matrix LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels 19–20\""
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Adaptive LED tail lamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Power tailgate"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Flush door handles"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "BMW Gesture Control"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Head-up display"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless smartphone charging"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium surround sound"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Connected car services"
+      }
+    ]
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "AMG GT",
+    "variant": "S Coupe",
+    "year": 2019,
+    "registrationYear": 2019,
+    "price": 14800000,
+    "mileage": 9800,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "COUPE",
+    "engine": "4.0L V8 Biturbo",
+    "power": "522 PS · 670 Nm",
+    "ownership": 1,
+    "color": "Obsidian Black",
+    "registrationCity": "Delhi NCR",
+    "description": "Long bonnet, hand-built V8 and a soundtrack that never gets old. This low-mileage AMG GT S has been garaged and driven sparingly, and it comes with its full set of Mercedes-Benz service documents. A rare chance to own a genuine everyday-usable supercar at a sensible point on the depreciation curve.",
+    "isFeatured": true,
+    "publishedAt": "2026-09-03",
+    "imageUrl": "https://images.unsplash.com/photo-1583267746897-2cf415887172",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Multiple airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Stability & traction control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Carbon-ceramic brakes"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking sensors with camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Dual-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Sport bucket seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Selectable drive modes"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adaptive dampers"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leather & Alcantara trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Carbon-fibre inserts"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Sport steering wheel with paddles"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Panamericana grille"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Forged alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Active rear spoiler"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Sport exhaust"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Quad tailpipes"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "AMG Track Pace"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium audio system"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Launch control"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Performance data logger"
+      }
+    ]
+  },
+  {
+    "brand": "Audi",
+    "model": "A7",
+    "variant": "55 TFSI Technology",
+    "year": 2020,
+    "registrationYear": 2020,
+    "price": 6200000,
+    "mileage": 27800,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SEDAN",
+    "engine": "3.0L V6 TFSI",
+    "power": "340 PS · 500 Nm",
+    "ownership": 1,
+    "color": "Glacier White",
+    "registrationCity": "Hyderabad",
+    "description": "The A7 Sportback is one of the best-looking cars in its class and this Glacier White example shows why. The 3.0-litre V6 with quattro grip is smooth, fast and deeply comfortable over long distances. Cabin condition is excellent, with a fully working MMI touch system and no warning lights.",
+    "isFeatured": true,
+    "publishedAt": "2026-09-01",
+    "imageUrl": "https://images.unsplash.com/photo-1616422285623-13ff0162193c",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "8 airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Electronic stability program"
+      },
+      {
+        "category": "SAFETY",
+        "name": "360° surround camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Lane-keep assist"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Blind-spot monitoring"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Adaptive cruise control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "4-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Ventilated & massaging seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Air suspension"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Soft-close doors"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear sunshades"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Nappa leather upholstery"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Wood / carbon trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Heated steering wheel"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Panoramic sunroof"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Frameless coupe-style doors"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Matrix LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels 19–20\""
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Adaptive LED tail lamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Power tailgate"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Flush door handles"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Audi virtual cockpit plus"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Head-up display"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless smartphone charging"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium surround sound"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Connected car services"
+      }
+    ]
+  },
+  {
+    "brand": "Porsche",
+    "model": "911",
+    "variant": "Carrera S",
+    "year": 2020,
+    "registrationYear": 2020,
+    "price": 18500000,
+    "mileage": 8900,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "COUPE",
+    "engine": "3.0L Flat-6 Twin-Turbo",
+    "power": "450 PS · 530 Nm",
+    "ownership": 1,
+    "color": "Carrara White",
+    "registrationCity": "Delhi NCR",
+    "description": "The benchmark sports car, in the colour that suits it best. This 992-generation Carrera S has covered under 9,000 km, is fitted with the Sport Chrono package and has been maintained strictly by the book. Every drive is an event, yet it is docile enough for daily use.",
+    "isFeatured": true,
+    "publishedAt": "2026-08-29",
+    "imageUrl": "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Multiple airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Stability & traction control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Carbon-ceramic brakes"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking sensors with camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Dual-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Sport bucket seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Selectable drive modes"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adaptive dampers"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leather & Alcantara trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Carbon-fibre inserts"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Sport steering wheel with paddles"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Sport Design package"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Forged alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Active rear spoiler"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Sport exhaust"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Quad tailpipes"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Sport Chrono package"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium audio system"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Launch control"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Performance data logger"
+      }
+    ]
+  },
+  {
+    "brand": "Toyota",
+    "model": "Camry",
+    "variant": "Hybrid 2.5",
+    "year": 2021,
+    "registrationYear": 2021,
+    "price": 3150000,
+    "mileage": 23400,
+    "fuelType": "HYBRID",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SEDAN",
+    "engine": "2.5L Hybrid Synergy Drive",
+    "power": "218 PS combined",
+    "ownership": 1,
+    "color": "Graphite Metallic",
+    "registrationCity": "Kochi",
+    "description": "Quiet, spacious and remarkably frugal, the Camry Hybrid is the sensible executive sedan with a luxury feel. This one-owner example has been used mostly for highway commutes and returns excellent real-world efficiency. Toyota reliability with almost nothing to do but drive.",
+    "isFeatured": true,
+    "publishedAt": "2026-08-26",
+    "imageUrl": "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Toyota Safety Sense"
+      },
+      {
+        "category": "SAFETY",
+        "name": "6 airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Electronic stability control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Hill-hold assist"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ISOFIX child-seat anchors"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear-seat recline"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Dual-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Ventilated front seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Cruise control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & push-button start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear AC vents"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leatherette upholstery"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Panoramic sunroof"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leather-wrapped steering wheel"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED projector headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels 17–18\""
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED daytime running lamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Shark-fin antenna"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "10\" touchscreen infotainment"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Connected car features"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless phone charging"
+      }
+    ]
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "GLE Coupe",
+    "variant": "400d 4MATIC",
+    "year": 2021,
+    "registrationYear": 2021,
+    "price": 8600000,
+    "mileage": 24500,
+    "fuelType": "DIESEL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SUV",
+    "engine": "3.0L Inline-6 Diesel",
+    "power": "330 PS · 700 Nm",
+    "ownership": 1,
+    "color": "Designo Diamond White",
+    "registrationCity": "Delhi NCR",
+    "description": "Coupe styling, SUV presence and a torque-rich six-cylinder diesel. The GLE Coupe 400d cruises effortlessly and has the road manners of a much lower car. Fully loaded with air suspension, the MBUX system and a full Burmester sound setup, and it has never been used commercially.",
+    "isFeatured": true,
+    "publishedAt": "2026-08-23",
+    "imageUrl": "https://images.unsplash.com/photo-1590362891991-f776e747a588",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "8 airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Electronic stability program"
+      },
+      {
+        "category": "SAFETY",
+        "name": "360° surround camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Lane-keep assist"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Blind-spot monitoring"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Adaptive cruise control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "4-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Ventilated & massaging seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Air suspension"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Soft-close doors"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear sunshades"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Nappa leather upholstery"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Wood / carbon trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Heated steering wheel"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Panoramic sunroof"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Matrix LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels 19–20\""
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Adaptive LED tail lamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Power tailgate"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Flush door handles"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "MBUX with augmented-reality navigation"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Head-up display"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless smartphone charging"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium surround sound"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Connected car services"
+      }
+    ]
+  },
+  {
+    "brand": "Audi",
+    "model": "A4",
+    "variant": "45 TFSI Technology",
+    "year": 2021,
+    "registrationYear": 2021,
+    "price": 4190000,
+    "mileage": 19700,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SEDAN",
+    "engine": "2.0L TFSI",
+    "power": "245 PS · 370 Nm",
+    "ownership": 1,
+    "color": "Turbo Blue",
+    "registrationCity": "Chennai",
+    "description": "A sharp, well-equipped A4 with quattro all-wheel drive and a strong turbocharged engine. The S line package gives it a purposeful stance, and inside you get the virtual cockpit and a crisp Bang & Olufsen-style audio upgrade. Serviced on schedule at an authorised Audi centre.",
+    "isFeatured": false,
+    "publishedAt": "2026-09-14",
+    "imageUrl": "https://images.unsplash.com/photo-1520050206274-a1ae44613e6d",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "6 airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Electronic stability control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Hill-hold assist"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ISOFIX child-seat anchors"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Dual-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Ventilated front seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Cruise control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & push-button start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear AC vents"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leatherette upholstery"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Panoramic sunroof"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leather-wrapped steering wheel"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "S line exterior package"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED projector headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels 17–18\""
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED daytime running lamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Shark-fin antenna"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Audi virtual cockpit"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "10\" touchscreen infotainment"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Connected car features"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless phone charging"
+      }
+    ]
+  },
+  {
+    "brand": "BMW",
+    "model": "4 Series",
+    "variant": "430i M Sport",
+    "year": 2020,
+    "registrationYear": 2020,
+    "price": 4450000,
+    "mileage": 28900,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "COUPE",
+    "engine": "2.0L TwinPower Turbo",
+    "power": "252 PS · 350 Nm",
+    "ownership": 1,
+    "color": "Frozen Grey",
+    "registrationCity": "Bengaluru",
+    "description": "A frozen-grey 430i coupe that looks the part and drives even better. Rear-wheel drive balance, a punchy turbo four and a beautifully judged M Sport chassis make it engaging on a favourite road and easy in traffic. Clean history and a tidy, unmodified example.",
+    "isFeatured": false,
+    "publishedAt": "2026-09-13",
+    "imageUrl": "https://images.unsplash.com/photo-1580273916550-e323be2ae537",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "8 airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Electronic stability program"
+      },
+      {
+        "category": "SAFETY",
+        "name": "360° surround camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Lane-keep assist"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Blind-spot monitoring"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Adaptive cruise control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "4-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Ventilated & massaging seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Air suspension"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Soft-close doors"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear sunshades"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Nappa leather upholstery"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Wood / carbon trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Heated steering wheel"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Panoramic sunroof"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Frozen grey metallic finish"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Matrix LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels 19–20\""
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Adaptive LED tail lamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Power tailgate"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Flush door handles"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Head-up display"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless smartphone charging"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium surround sound"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Connected car services"
+      }
+    ]
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Range Rover Sport",
+    "variant": "3.0 SDV6 HSE",
+    "year": 2019,
+    "registrationYear": 2019,
+    "price": 7450000,
+    "mileage": 44200,
+    "fuelType": "DIESEL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SUV",
+    "engine": "3.0L V6 Diesel",
+    "power": "249 PS · 600 Nm",
+    "ownership": 2,
+    "color": "Santorini Black",
+    "registrationCity": "Pune",
+    "description": "Commanding, capable and beautifully finished. This Range Rover Sport HSE in Santorini Black has air suspension, a Meridian sound system and the full terrain-response system. Two careful owners, extensive service history, and a cabin that has aged gracefully.",
+    "isFeatured": false,
+    "publishedAt": "2026-08-17",
+    "imageUrl": "https://images.unsplash.com/photo-1563720223185-11003d516935",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "8 airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Electronic stability program"
+      },
+      {
+        "category": "SAFETY",
+        "name": "360° surround camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Lane-keep assist"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Blind-spot monitoring"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Adaptive cruise control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Terrain Response 2 with air suspension"
+      },
+      {
+        "category": "COMFORT",
+        "name": "4-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Ventilated & massaging seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Air suspension"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Soft-close doors"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear sunshades"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Nappa leather upholstery"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Wood / carbon trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Heated steering wheel"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Panoramic sunroof"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Matrix LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels 19–20\""
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Adaptive LED tail lamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Power tailgate"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Flush door handles"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Head-up display"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless smartphone charging"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium surround sound"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Connected car services"
+      }
+    ]
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Verna",
+    "variant": "SX Turbo DCT",
+    "year": 2021,
+    "registrationYear": 2021,
+    "price": 1275000,
+    "mileage": 26700,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SEDAN",
+    "engine": "1.0L Turbo GDi",
+    "power": "120 PS · 172 Nm",
+    "ownership": 1,
+    "color": "Phantom Black",
+    "registrationCity": "Ahmedabad",
+    "description": "The turbo-DCT Verna is the enthusiast's choice in the segment, quick off the line and a great highway companion. A one-owner car with well-documented servicing, a spotless interior and all keys and manuals present.",
+    "isFeatured": false,
+    "publishedAt": "2026-09-11",
+    "imageUrl": "https://images.unsplash.com/photo-1619767886558-efdc259cde1a",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Dual front airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking sensors"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ISOFIX child-seat anchors"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Speed-sensing door locks"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Ventilated front seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Automatic climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Cruise control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear AC vents"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Push-button start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adjustable steering column"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Fabric / leatherette seats"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Height-adjustable driver seat"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Rear armrest with cup-holders"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Steering-mounted controls"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Body-coloured mirrors with indicators"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Roof rails"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Hyundai BlueLink connected car"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Touchscreen infotainment"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Bluetooth connectivity"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Reverse camera"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "USB fast charging"
+      }
+    ]
+  },
+  {
+    "brand": "Honda",
+    "model": "City",
+    "variant": "ZX CVT",
+    "year": 2021,
+    "registrationYear": 2021,
+    "price": 1190000,
+    "mileage": 29800,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SEDAN",
+    "engine": "1.5L i-VTEC",
+    "power": "121 PS · 145 Nm",
+    "ownership": 1,
+    "color": "Lunar Silver",
+    "registrationCity": "Pune",
+    "description": "Roomy, refined and easy to live with, the City ZX CVT is the top-spec variant with a sunroof and lane-watch camera. Smooth CVT, excellent fuel economy and Honda's legendary reliability. Serviced at authorised Honda workshops.",
+    "isFeatured": false,
+    "publishedAt": "2026-09-17",
+    "imageUrl": "https://images.unsplash.com/photo-1581540222194-0def2dda95b8",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Honda Sensing suite"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Dual front airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking sensors"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ISOFIX child-seat anchors"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Speed-sensing door locks"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Electric sunroof"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Automatic climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Cruise control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear AC vents"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Push-button start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adjustable steering column"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Fabric / leatherette seats"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Height-adjustable driver seat"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Rear armrest with cup-holders"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Steering-mounted controls"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Body-coloured mirrors with indicators"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Roof rails"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Touchscreen infotainment"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Bluetooth connectivity"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Reverse camera"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "USB fast charging"
+      }
+    ]
+  },
+  {
+    "brand": "Kia",
+    "model": "Seltos",
+    "variant": "GTX+ Diesel AT",
+    "year": 2021,
+    "registrationYear": 2021,
+    "price": 1490000,
+    "mileage": 32000,
+    "fuelType": "DIESEL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SUV",
+    "engine": "1.5L CRDi",
+    "power": "115 PS · 250 Nm",
+    "ownership": 1,
+    "color": "Gravity Grey",
+    "registrationCity": "Bengaluru",
+    "description": "A feature-rich compact SUV with a torquey diesel and a slick six-speed automatic. This GTX+ has the Bose audio system, ventilated seats and a panoramic sunroof, and was mostly driven on highways. Bodywork and interior are in very good condition.",
+    "isFeatured": false,
+    "publishedAt": "2026-09-19",
+    "imageUrl": "https://images.unsplash.com/photo-1609521263047-f8f205293f24",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Dual front airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking sensors"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ISOFIX child-seat anchors"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Speed-sensing door locks"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Ventilated front seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Automatic climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Cruise control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear AC vents"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Push-button start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adjustable steering column"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Fabric / leatherette seats"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Height-adjustable driver seat"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Rear armrest with cup-holders"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Steering-mounted controls"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Body-coloured mirrors with indicators"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Roof rails"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "UVO connected features"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Bose 8-speaker audio"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Touchscreen infotainment"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Bluetooth connectivity"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Reverse camera"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "USB fast charging"
+      }
+    ]
+  },
+  {
+    "brand": "Audi",
+    "model": "RS6",
+    "variant": "Avant Performance",
+    "year": 2021,
+    "registrationYear": 2021,
+    "price": 14200000,
+    "mileage": 15000,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "WAGON",
+    "engine": "4.0L V8 TFSI",
+    "power": "600 PS · 800 Nm",
+    "ownership": 1,
+    "color": "Nardo Grey",
+    "registrationCity": "Mumbai",
+    "description": "All the practicality of a family estate with the performance of a supercar. This RS6 Avant in Nardo Grey has carbon ceramic brakes, the dynamic package and a lightly used, mostly highway history. Its 4.0-litre twin-turbo V8 is as smooth as it is savage.",
+    "isFeatured": false,
+    "publishedAt": "2026-08-20",
+    "imageUrl": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Multiple airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Stability & traction control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Carbon-ceramic brakes"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking sensors with camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear-seat comfort pack"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Dual-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Sport bucket seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Selectable drive modes"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adaptive dampers"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leather & Alcantara trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Carbon-fibre inserts"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Sport steering wheel with paddles"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Forged alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Active rear spoiler"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Sport exhaust"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Quad tailpipes"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Bang & Olufsen 3D Advanced Sound"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium audio system"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Launch control"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Performance data logger"
+      }
+    ]
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV700",
+    "variant": "AX7 L Diesel AT",
+    "year": 2022,
+    "registrationYear": 2022,
+    "price": 2290000,
+    "mileage": 31800,
+    "fuelType": "DIESEL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SUV",
+    "engine": "2.2L mHawk",
+    "power": "185 PS · 420 Nm",
+    "ownership": 1,
+    "color": "Everest White",
+    "registrationCity": "Jaipur",
+    "description": "The top AX7 L with ADAS, panoramic sunroof and 7-seat layout. This example is powered by the strong 2.2-litre diesel with a smooth six-speed automatic, making it equally at home with a family on a road trip or in the city. Mostly used by a single owner.",
+    "isFeatured": false,
+    "publishedAt": "2026-09-09",
+    "imageUrl": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "ADAS Level 2 suite"
+      },
+      {
+        "category": "SAFETY",
+        "name": "6 airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Electronic stability control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Hill-hold assist"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ISOFIX child-seat anchors"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Dual-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Ventilated front seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Cruise control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & push-button start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear AC vents"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Seven-seat layout with captain seats"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leatherette upholstery"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Panoramic sunroof"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leather-wrapped steering wheel"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED projector headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels 17–18\""
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED daytime running lamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Shark-fin antenna"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "10\" touchscreen infotainment"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Connected car features"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless phone charging"
+      }
+    ]
+  },
+  {
+    "brand": "Tata",
+    "model": "Nexon EV",
+    "variant": "Max XZ+ Lux",
+    "year": 2023,
+    "registrationYear": 2023,
+    "price": 1540000,
+    "mileage": 11800,
+    "fuelType": "ELECTRIC",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SUV",
+    "engine": "40.5 kWh Lithium-ion",
+    "power": "143 PS · 250 Nm",
+    "ownership": 1,
+    "color": "Pristine White",
+    "registrationCity": "Mumbai",
+    "description": "An almost-new Nexon EV Max with a real-world range that comfortably covers a week of city commuting. The battery health report is clean, the fast-charging port works flawlessly and the car comes with its portable charger. Perfect for a first EV.",
+    "isFeatured": false,
+    "publishedAt": "2026-09-16",
+    "imageUrl": "https://images.unsplash.com/photo-1600661653561-629509216228",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "6 airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Electronic stability control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Hill-hold & hill-descent control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Reverse camera with sensors"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Automatic climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Ventilated front seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "One-pedal driving mode"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Regenerative braking levels"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Push-button start"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leatherette seats"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Panoramic sunroof"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Minimalist dashboard"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps with signature DRLs"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Aero alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Connected tail-lamp bar"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Flush charging port"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Home wall-box charger included"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Large touchscreen with OTA updates"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Connected EV app with charge scheduling"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Fast-charging capable (DC)"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      }
+    ]
+  },
+  {
+    "brand": "BMW",
+    "model": "7 Series",
+    "variant": "730Ld M Sport",
+    "year": 2020,
+    "registrationYear": 2020,
+    "price": 7800000,
+    "mileage": 34600,
+    "fuelType": "DIESEL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SEDAN",
+    "engine": "3.0L TwinPower Turbo Diesel",
+    "power": "265 PS · 620 Nm",
+    "ownership": 1,
+    "color": "Bernina Grey",
+    "registrationCity": "Delhi NCR",
+    "description": "The flagship in long-wheelbase form: a serene, chauffeur-friendly cabin with the substance to reward the driver. This 730Ld has executive-lounge rear seats, a Bowers & Wilkins system and seamless diesel refinement. Maintained by BMW and never used for hire.",
+    "isFeatured": false,
+    "publishedAt": "2026-08-14",
+    "imageUrl": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "8 airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Electronic stability program"
+      },
+      {
+        "category": "SAFETY",
+        "name": "360° surround camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Lane-keep assist"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Blind-spot monitoring"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Adaptive cruise control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Executive lounge rear seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "4-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Ventilated & massaging seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Air suspension"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Soft-close doors"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear sunshades"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Nappa leather upholstery"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Wood / carbon trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Heated steering wheel"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Panoramic sunroof"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Kidney grille with Iconic Glow"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Matrix LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels 19–20\""
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Adaptive LED tail lamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Power tailgate"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Flush door handles"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Head-up display"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless smartphone charging"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium surround sound"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Connected car services"
+      }
+    ]
+  },
+  {
+    "brand": "Jaguar",
+    "model": "F-Type",
+    "variant": "2.0 R-Dynamic",
+    "year": 2018,
+    "registrationYear": 2018,
+    "price": 6950000,
+    "mileage": 19800,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "COUPE",
+    "engine": "2.0L Ingenium Turbo",
+    "power": "300 PS · 400 Nm",
+    "ownership": 1,
+    "color": "Firenze Red",
+    "registrationCity": "Bengaluru",
+    "description": "One of the prettiest cars of its generation, in Firenze Red. The 2.0-litre turbo is quick and economical, and the R-Dynamic chassis is playful without being unruly. Low mileage, single owner, full service history at Jaguar Land Rover.",
+    "isFeatured": false,
+    "publishedAt": "2026-08-10",
+    "imageUrl": "https://images.unsplash.com/photo-1507136566006-cfc505b114fc",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Multiple airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Stability & traction control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Carbon-ceramic brakes"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking sensors with camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Dual-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Sport bucket seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Selectable drive modes"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adaptive dampers"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leather & Alcantara trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Carbon-fibre inserts"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Sport steering wheel with paddles"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Active sports exhaust"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Forged alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Active rear spoiler"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Sport exhaust"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Quad tailpipes"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium audio system"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Launch control"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Performance data logger"
+      }
+    ]
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "C-Class",
+    "variant": "C 43 AMG 4MATIC",
+    "year": 2019,
+    "registrationYear": 2019,
+    "price": 5600000,
+    "mileage": 31200,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SEDAN",
+    "engine": "3.0L V6 Biturbo",
+    "power": "390 PS · 520 Nm",
+    "ownership": 1,
+    "color": "Selenite Grey",
+    "registrationCity": "Mumbai",
+    "description": "The all-weather AMG: a biturbo V6, 4MATIC traction and a cabin fit for a much larger car. This C 43 has the night package and a well-maintained mechanical history. It is fast, discreet and everyday usable.",
+    "isFeatured": false,
+    "publishedAt": "2026-08-06",
+    "imageUrl": "https://images.unsplash.com/photo-1514316454349-750a7fd3da3a",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Multiple airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Stability & traction control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Carbon-ceramic brakes"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking sensors with camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Dual-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Sport bucket seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Selectable drive modes"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adaptive dampers"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leather & Alcantara trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Carbon-fibre inserts"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Sport steering wheel with paddles"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "AMG night package"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Forged alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Active rear spoiler"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Sport exhaust"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Quad tailpipes"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Burmester surround sound"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium audio system"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Launch control"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Performance data logger"
+      }
+    ]
+  },
+  {
+    "brand": "Honda",
+    "model": "CR-V",
+    "variant": "1.6 i-DTEC AWD",
+    "year": 2018,
+    "registrationYear": 2018,
+    "price": 1790000,
+    "mileage": 58400,
+    "fuelType": "DIESEL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SUV",
+    "engine": "1.6L i-DTEC",
+    "power": "160 PS · 350 Nm",
+    "ownership": 2,
+    "color": "White Orchid Pearl",
+    "registrationCity": "Jaipur",
+    "description": "Honda's practical, spacious SUV with a fuss-free diesel and all-wheel drive. With two owners, complete service records and honest, well-kept interiors, this CR-V is a great pick for family duty or long-distance touring.",
+    "isFeatured": false,
+    "publishedAt": "2026-08-02",
+    "imageUrl": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "6 airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Electronic stability control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Hill-hold assist"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ISOFIX child-seat anchors"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Real Time AWD"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Dual-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Ventilated front seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Cruise control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & push-button start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear AC vents"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leatherette upholstery"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Panoramic sunroof"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leather-wrapped steering wheel"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED projector headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels 17–18\""
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED daytime running lamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Shark-fin antenna"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "10\" touchscreen infotainment"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Connected car features"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless phone charging"
+      }
+    ]
+  },
+  {
+    "brand": "Audi",
+    "model": "R8",
+    "variant": "V10 Plus",
+    "year": 2018,
+    "registrationYear": 2018,
+    "price": 19500000,
+    "mileage": 12600,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "COUPE",
+    "engine": "5.2L V10 FSI",
+    "power": "610 PS · 560 Nm",
+    "ownership": 1,
+    "color": "Tango Red",
+    "registrationCity": "Mumbai",
+    "description": "A naturally aspirated V10 that revs to 8,700 rpm — a sound that will never come again. This Tango Red R8 V10 Plus is one-owner, garage kept and comes with full documentation. Exotic drama with Audi usability.",
+    "isFeatured": false,
+    "publishedAt": "2026-07-28",
+    "imageUrl": "https://images.unsplash.com/photo-1502161254066-6c74afbf07aa",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Multiple airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Stability & traction control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Carbon-ceramic brakes"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking sensors with camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Dual-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Sport bucket seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Selectable drive modes"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adaptive dampers"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leather & Alcantara trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Carbon-fibre inserts"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Sport steering wheel with paddles"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Carbon-fibre exterior package"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Forged alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Active rear spoiler"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Sport exhaust"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Quad tailpipes"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium audio system"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Launch control"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Performance data logger"
+      }
+    ]
+  },
+  {
+    "brand": "Porsche",
+    "model": "Panamera",
+    "variant": "4",
+    "year": 2019,
+    "registrationYear": 2019,
+    "price": 11200000,
+    "mileage": 22000,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "SEDAN",
+    "engine": "2.9L V6 Twin-Turbo",
+    "power": "330 PS · 450 Nm",
+    "ownership": 1,
+    "color": "Jet Black",
+    "registrationCity": "Mumbai",
+    "description": "A four-door with a proper sports-car soul. The Panamera 4 combines a hushed, lavish cabin with the handling that only Porsche gets right. Fitted with air suspension and the Sport Chrono package, in immaculate condition inside and out.",
+    "isFeatured": false,
+    "publishedAt": "2026-07-24",
+    "imageUrl": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "8 airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Electronic stability program"
+      },
+      {
+        "category": "SAFETY",
+        "name": "360° surround camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Lane-keep assist"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Blind-spot monitoring"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Adaptive cruise control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adaptive air suspension"
+      },
+      {
+        "category": "COMFORT",
+        "name": "4-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Ventilated & massaging seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Air suspension"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Soft-close doors"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear sunshades"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Nappa leather upholstery"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Wood / carbon trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Heated steering wheel"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Panoramic sunroof"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Matrix LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels 19–20\""
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Adaptive LED tail lamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Power tailgate"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Flush door handles"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Porsche Communication Management"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Head-up display"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless smartphone charging"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium surround sound"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Wireless Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Connected car services"
+      }
+    ]
+  },
+  {
+    "brand": "Hyundai",
+    "model": "i20",
+    "variant": "N Line N8 iMT",
+    "year": 2022,
+    "registrationYear": 2022,
+    "price": 960000,
+    "mileage": 14200,
+    "fuelType": "PETROL",
+    "transmission": "MANUAL",
+    "bodyType": "HATCHBACK",
+    "engine": "1.0L Turbo GDi",
+    "power": "120 PS · 172 Nm",
+    "ownership": 1,
+    "color": "Thunder Blue",
+    "registrationCity": "Chandigarh",
+    "description": "The warm hatch of the i20 range with a sharp turbo three-cylinder and sportier suspension. A well-loved, low-mileage example with the N Line body kit, Bose sound and all service records. Fun, frugal and full of character.",
+    "isFeatured": false,
+    "publishedAt": "2026-09-18",
+    "imageUrl": "https://images.unsplash.com/photo-1550355291-bbee04a92027",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Dual front airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking sensors"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ISOFIX child-seat anchors"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Speed-sensing door locks"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Automatic climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Cruise control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear AC vents"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Push-button start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adjustable steering column"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "N Line red-accent sport seats"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Fabric / leatherette seats"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Height-adjustable driver seat"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Rear armrest with cup-holders"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Steering-mounted controls"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Body-coloured mirrors with indicators"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Roof rails"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Bose 7-speaker audio"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Touchscreen infotainment"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Bluetooth connectivity"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Reverse camera"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "USB fast charging"
+      }
+    ]
+  },
+  {
+    "brand": "BMW",
+    "model": "M2",
+    "variant": "Competition",
+    "year": 2019,
+    "registrationYear": 2019,
+    "price": 6800000,
+    "mileage": 18200,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "COUPE",
+    "engine": "3.0L Twin-Turbo Inline-6",
+    "power": "410 PS · 550 Nm",
+    "ownership": 1,
+    "color": "Long Beach Blue",
+    "registrationCity": "Hyderabad",
+    "description": "The M2 Competition is a compact, tactile, rear-wheel-drive rocket in Long Beach Blue. Its twin-turbo straight-six punches hard and the chassis communicates beautifully. A single-owner car with a spotless history and no track use.",
+    "isFeatured": false,
+    "publishedAt": "2026-07-15",
+    "imageUrl": "https://images.unsplash.com/photo-1541443131876-44b03de101c5",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Multiple airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Stability & traction control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Carbon-ceramic brakes"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking sensors with camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Dual-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Sport bucket seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Selectable drive modes"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adaptive dampers"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "M Sport bucket seats"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leather & Alcantara trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Carbon-fibre inserts"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Sport steering wheel with paddles"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Forged alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Active rear spoiler"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Sport exhaust"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Quad tailpipes"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium audio system"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Launch control"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Performance data logger"
+      }
+    ]
+  },
+  {
+    "brand": "Ford",
+    "model": "Mustang",
+    "variant": "GT 5.0 V8",
+    "year": 2018,
+    "registrationYear": 2018,
+    "price": 5800000,
+    "mileage": 17600,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "COUPE",
+    "engine": "5.0L Coyote V8",
+    "power": "421 PS · 529 Nm",
+    "ownership": 1,
+    "color": "Shadow Black",
+    "registrationCity": "Chandigarh",
+    "description": "American muscle with the burble to prove it. A naturally aspirated 5.0-litre V8, launch control and a well-judged chassis make this GT a joy at any speed. Shadow Black, single owner, low mileage and a clean interior.",
+    "isFeatured": false,
+    "publishedAt": "2026-07-10",
+    "imageUrl": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Multiple airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Stability & traction control"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Carbon-ceramic brakes"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking sensors with camera"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Tyre pressure monitoring"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Dual-zone climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Sport bucket seats"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Selectable drive modes"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adaptive dampers"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Keyless entry & start"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Leather & Alcantara trim"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Carbon-fibre inserts"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Sport steering wheel with paddles"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Ambient lighting"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Active valve exhaust"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Forged alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Active rear spoiler"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Sport exhaust"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Quad tailpipes"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Digital instrument cluster"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Premium audio system"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Launch control"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Performance data logger"
+      }
+    ]
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Polo",
+    "variant": "GT TSI",
+    "year": 2019,
+    "registrationYear": 2019,
+    "price": 820000,
+    "mileage": 41200,
+    "fuelType": "PETROL",
+    "transmission": "AUTOMATIC",
+    "bodyType": "HATCHBACK",
+    "engine": "1.0L TSI",
+    "power": "110 PS · 175 Nm",
+    "ownership": 1,
+    "color": "Reflex Silver",
+    "registrationCity": "Chennai",
+    "description": "The Polo GT TSI is a solid, well-built hatchback with an eager turbo engine and a 7-speed DSG. Genuinely fun in traffic and refined on the highway. One owner, always serviced on time.",
+    "isFeatured": false,
+    "publishedAt": "2026-07-05",
+    "imageUrl": "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Dual airbags with ESP"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Dual front airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking sensors"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ISOFIX child-seat anchors"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Speed-sensing door locks"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Automatic climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Cruise control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear AC vents"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Push-button start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adjustable steering column"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "GT sport seats"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Fabric / leatherette seats"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Height-adjustable driver seat"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Rear armrest with cup-holders"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Steering-mounted controls"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Body-coloured mirrors with indicators"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Roof rails"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Touchscreen infotainment"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Bluetooth connectivity"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Reverse camera"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "USB fast charging"
+      }
+    ]
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Santro",
+    "variant": "Asta 1.1",
+    "year": 2019,
+    "registrationYear": 2019,
+    "price": 440000,
+    "mileage": 38000,
+    "fuelType": "PETROL",
+    "transmission": "MANUAL",
+    "bodyType": "HATCHBACK",
+    "engine": "1.1L Epsilon",
+    "power": "69 PS · 99 Nm",
+    "ownership": 1,
+    "color": "Aqua Teal",
+    "registrationCity": "Ahmedabad",
+    "description": "A tall-boy hatchback that is effortless to drive and cheap to run. The top Asta trim brings touchscreen infotainment, a reverse camera and rear AC vents. Perfect as a first car or a city runabout, with light usage and a tidy cabin.",
+    "isFeatured": false,
+    "publishedAt": "2026-07-01",
+    "imageUrl": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2",
+    "features": [
+      {
+        "category": "SAFETY",
+        "name": "Dual front airbags"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ABS with EBD"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Rear parking sensors"
+      },
+      {
+        "category": "SAFETY",
+        "name": "ISOFIX child-seat anchors"
+      },
+      {
+        "category": "SAFETY",
+        "name": "Speed-sensing door locks"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Automatic climate control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Cruise control"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Rear AC vents"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Push-button start"
+      },
+      {
+        "category": "COMFORT",
+        "name": "Adjustable steering column"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Fabric / leatherette seats"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Height-adjustable driver seat"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Rear armrest with cup-holders"
+      },
+      {
+        "category": "INTERIOR",
+        "name": "Steering-mounted controls"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "LED headlamps"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Alloy wheels"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Body-coloured mirrors with indicators"
+      },
+      {
+        "category": "EXTERIOR",
+        "name": "Roof rails"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Touchscreen infotainment"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Apple CarPlay & Android Auto"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Bluetooth connectivity"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Reverse camera"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "USB fast charging"
+      }
+    ]
+  }
+]

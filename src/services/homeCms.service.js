@@ -60,7 +60,9 @@ const updateSection = async (key, data) => {
 const collectionService = (config) => {
   const delegate = prisma[config.model];
 
-  const list = async () => (await delegate.findMany({ orderBy: byOrder })).map(adminItem);
+  const include = config.include;
+
+  const list = async () => (await delegate.findMany({ orderBy: byOrder, include })).map(adminItem);
 
   // Items land at the end unless a position is given. displayOrder is not unique, so two racing
   // creates cannot fail; ties fall back to id.
@@ -74,9 +76,9 @@ const collectionService = (config) => {
     }
 
     try {
-      return adminItem(await delegate.create({ data: { ...data, displayOrder } }));
+      return adminItem(await delegate.create({ data: { ...data, displayOrder }, include }));
     } catch (err) {
-      throw translateConflict(err, config);
+      throw translateError(err, config);
     }
   };
 
@@ -85,9 +87,9 @@ const collectionService = (config) => {
     if (config.name === "budgetItems") await assertMergedBudgetBounds(delegate, id, data);
 
     try {
-      return adminItem(await delegate.update({ where: { id }, data }));
+      return adminItem(await delegate.update({ where: { id }, data, include }));
     } catch (err) {
-      throw translateConflict(err, config);
+      throw translateError(err, config);
     }
   };
 
@@ -114,17 +116,28 @@ const collectionService = (config) => {
   };
 
   const listActive = async () => {
-    const rows = await delegate.findMany({ where: { isActive: true }, orderBy: byOrder });
-    return rows.map((row) => pick(row, config.publicFields));
+    const rows = await delegate.findMany({ where: { isActive: true }, orderBy: byOrder, include });
+    return rows.map((row) =>
+      config.toPublic ? config.toPublic(row) : pick(row, config.publicFields)
+    );
   };
 
   return { list, create, update, remove, reorder, listActive };
 };
 
-const translateConflict = (err, config) =>
-  err.code === "P2002" && config.duplicateMessage
-    ? ApiError.conflict(config.duplicateMessage)
-    : err;
+// Turns a unique / foreign-key violation on a write into the error the admin should see.
+const translateError = (err, config) => {
+  if (err.code === "P2002" && config.duplicateMessage) {
+    return ApiError.conflict(config.duplicateMessage);
+  }
+  if (err.code === "P2003" && config.foreignKey) {
+    return ApiError.unprocessable("Validation failed", {
+      code: "VALIDATION_ERROR",
+      details: [{ path: config.foreignKey.field, message: config.foreignKey.message }],
+    });
+  }
+  return err;
+};
 
 const boundsError = () =>
   ApiError.unprocessable("Validation failed", {
@@ -167,7 +180,38 @@ const getPublicContent = async () => {
   COLLECTIONS.forEach((c, i) => {
     content[c.section][c.prop] = itemLists[i];
   });
+  await addCarCounts(content);
   return content;
+};
+
+const LAKH = 100_000;
+
+// How many published cars each brand tile and budget band leads to, so the page doesn't have to
+// download the catalogue to print "4 cars".
+const addCarCounts = async (content) => {
+  const active = { status: "ACTIVE" };
+  const bands = content.budget.items;
+
+  const [brandCounts, ...bandCounts] = await Promise.all([
+    prisma.car.groupBy({ by: ["brandId"], where: active, _count: { _all: true } }),
+    ...bands.map(({ minPriceLakh, maxPriceLakh }) =>
+      prisma.car.count({
+        where: {
+          ...active,
+          price: {
+            ...(minPriceLakh !== null && { gte: minPriceLakh * LAKH }),
+            ...(maxPriceLakh !== null && { lte: maxPriceLakh * LAKH }),
+          },
+        },
+      })
+    ),
+  ]);
+
+  const perBrand = new Map(brandCounts.map((row) => [row.brandId, row._count._all]));
+  for (const tile of content.brands.items) tile.carCount = perBrand.get(tile.brandId) ?? 0;
+  bands.forEach((band, i) => {
+    band.carCount = bandCounts[i];
+  });
 };
 
 // What the admin UI needs to build its forms.

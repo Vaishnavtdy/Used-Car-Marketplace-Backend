@@ -28,6 +28,22 @@ enum Transmission {
   AUTOMATIC
 }
 
+enum BodyType {
+  SEDAN
+  SUV
+  HATCHBACK
+  COUPE
+  WAGON
+}
+
+enum FeatureCategory {
+  SAFETY
+  COMFORT
+  INTERIOR
+  EXTERIOR
+  TECHNOLOGY
+}
+
 enum ListingStatus {
   DRAFT
   ACTIVE
@@ -83,7 +99,8 @@ model Brand {
   id   Int    @id @default(autoincrement())
   name String
 
-  cars Car[]
+  cars      Car[]
+  homeBrand HomeBrand?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -110,29 +127,55 @@ model Car {
   ownership        Int?
   registrationCity String?
 
+  // Optional detail shown on the listing page; the body type also drives a filter.
+  bodyType         BodyType?
+  engine           String?   @db.VarChar(100)
+  power            String?   @db.VarChar(100)
+  registrationYear Int?
+
+  // Hand-picked for the home page's Featured section
+  isFeatured Boolean @default(false)
+
   status      ListingStatus @default(DRAFT)
   publishedAt DateTime?
 
-  seller    User       @relation(fields: [sellerId], references: [id])
-  brand     Brand      @relation(fields: [brandId], references: [id])
+  seller    User         @relation(fields: [sellerId], references: [id])
+  brand     Brand        @relation(fields: [brandId], references: [id])
   images    CarImage[]
+  features  CarFeature[]
   favorites Favorite[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   @@index([status, publishedAt])
+  @@index([status, isFeatured])
   @@index([sellerId])
   @@index([brandId, model])
   @@index([price])
   @@index([year])
 }
 
+// One bullet in the Features section of a listing, e.g. SAFETY / "6 airbags". position keeps
+// the order the admin wrote them in.
+model CarFeature {
+  id       Int             @id @default(autoincrement())
+  carId    Int
+  category FeatureCategory
+  name     String          @db.VarChar(120)
+  position Int
+
+  car Car @relation(fields: [carId], references: [id], onDelete: Cascade)
+
+  @@index([carId, category, position])
+}
+
 model CarImage {
   id         Int      @id @default(autoincrement())
   carId      Int
   url        String
-  storageKey String
+  // Set for files this API stored (uploads); NULL for a photo that lives at an external URL.
+  storageKey String?
   position   Int      @default(0)
   isPrimary  Boolean  @default(false)
   createdAt  DateTime @default(now())
@@ -205,15 +248,19 @@ model HeroStat {
   @@index([isActive, displayOrder])
 }
 
-// Named HomeBrand because Brand is the master list of car makes. A home page brand is only a
-// tile (name + photo); the car count on it is derived from the listings, not stored.
-// Names are unique case-insensitively via the HomeBrand_name_lower_key index.
+// A brand tile on the home page. The brand itself is master data (Brand): a tile only points at
+// one, so its name is never duplicated here and renaming a brand updates the tile. What belongs to
+// the tile is its photo, position and visibility. A brand can be on the home page at most once,
+// and deleting the master brand removes its tile.
+// The car count shown on a tile is derived from the listings, not stored.
 model HomeBrand {
   id           Int     @id @default(autoincrement())
-  name         String  @db.VarChar(50)
+  brandId      Int     @unique
   imageUrl     String  @db.VarChar(2048)
   displayOrder Int
   isActive     Boolean @default(true)
+
+  brand Brand @relation(fields: [brandId], references: [id], onDelete: Cascade)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
