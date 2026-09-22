@@ -13,4 +13,10 @@ const upload = multer({
 // Multipart field name: "images". Multer errors are translated by the error handler.
 const uploadImages = upload.array("images", MAX_FILES_PER_REQUEST);
 
-module.exports = { uploadImages, MAX_IMAGE_BYTES, MAX_FILES_PER_REQUEST };
+// The site logo: one file, same size limit as any other image upload. Multipart field name: "logo".
+const uploadLogo = multer({
+  storage: multer.memoryStorage(),
+  limits: { fileSize: MAX_IMAGE_BYTES, files: 1, fields: 0 },
+}).single("logo");
+
+module.exports = { uploadImages, uploadLogo, MAX_IMAGE_BYTES, MAX_FILES_PER_REQUEST };

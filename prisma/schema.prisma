@@ -328,3 +328,26 @@ model Testimonial {
 
   @@index([isActive, displayOrder])
 }
+
+// ---------------------------------------------------------------------------------------------
+// Site identity (logo + brand name), used everywhere the site's chrome renders (navbar, footer,
+// page titles, admin sidebar) — not just the home page, so this is deliberately its own singleton
+// rather than another Home Page CMS section.
+//
+// A fixed single row (id = 1), created by the site_settings migration and only ever updated.
+// brandName is edited directly; logoUrl / logoStorageKey are only ever set by the logo upload
+// endpoint (which also removes the previous file) and cleared by the remove-logo endpoint, never
+// written directly. At least one of brandName / logoUrl must be set at all times — enforced here
+// by the service before every write, and backstopped by a CHECK constraint (see the migration)
+// for anything that bypasses it.
+// ---------------------------------------------------------------------------------------------
+model SiteSettings {
+  id        Int     @id @default(1)
+  brandName String? @db.VarChar(60)
+  // Set together: the public URL shown on the site, and the storage key used to delete the file
+  // when the logo is replaced or removed. logoStorageKey is never exposed by the API.
+  logoUrl        String? @db.VarChar(2048)
+  logoStorageKey String? @db.VarChar(255)
+
+  updatedAt DateTime @updatedAt
+}

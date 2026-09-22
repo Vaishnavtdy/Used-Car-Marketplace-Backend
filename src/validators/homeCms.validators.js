@@ -1,5 +1,5 @@
 const { z } = require("zod");
-const { idParam, atLeastOneField } = require("./common");
+const { idParam, atLeastOneField, imageUrl } = require("./common");
 const { TEXT_LIMITS, SECTIONS, COLLECTIONS, ICON_KEYS } = require("../config/homeCms");
 
 const MAX_HERO_TITLE_LINES = 3;
@@ -41,32 +41,6 @@ const highlightedText = z
   .trim()
   .max(TEXT_LIMITS.highlightedText)
   .refine((s) => !/[\r\n]/.test(s), "Must be a single line");
-
-// Image URLs: an absolute http(s) URL without credentials, or a file served from this API's
-// /uploads directory. Anything else (javascript:, data:, protocol-relative, ...) is rejected.
-const isImageUrl = (value) => {
-  if (value.startsWith("/uploads/")) {
-    return /^\/uploads\/[A-Za-z0-9._\-/]+$/.test(value) && !value.includes("..");
-  }
-  try {
-    const url = new URL(value);
-    return (
-      (url.protocol === "https:" || url.protocol === "http:") &&
-      url.hostname !== "" &&
-      url.username === "" &&
-      url.password === ""
-    );
-  } catch {
-    return false;
-  }
-};
-
-const imageUrl = z
-  .string()
-  .trim()
-  .min(1, "Required")
-  .max(2048)
-  .refine(isImageUrl, "Must be an http(s) URL or an /uploads/ path");
 
 const displayOrder = z.number().int().min(0).max(9999);
 const isActive = z.boolean();

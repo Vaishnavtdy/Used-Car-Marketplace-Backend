@@ -5,6 +5,7 @@ const userRoutes = require("./user.routes");
 const brandRoutes = require("./brand.routes");
 const carRoutes = require("./car.routes");
 const homeCmsRoutes = require("./homeCms.routes");
+const siteSettingsRoutes = require("./siteSettings.routes");
 
 const router = express.Router();
 
@@ -15,5 +16,6 @@ router.use("/users", userRoutes);
 router.use("/brands", brandRoutes);
 router.use("/cars", carRoutes);
 router.use("/cms/home", homeCmsRoutes);
+router.use("/site-settings", siteSettingsRoutes);
 
 module.exports = router;

@@ -159,6 +159,30 @@ number on a how-it-works step is its position, not a stored value.
 Prisma enum/model, and write a migration that also inserts its default content. Validators, services, routes
 are generated from the registry.
 
+## Site Identity
+
+The brand name and logo shown across the site (navbar, footer, page titles, admin sidebar) live in a single
+`SiteSettings` row, edited from the admin UI in `frontend/` (`/admin/branding`). It's separate from the Home
+Page CMS above because it isn't home-page content — it renders on every page.
+
+**Defaults.** The `site_settings` migration creates the row with `brandName = 'Marque'`, `logoUrl = NULL`,
+matching what the site showed before this existed.
+
+**Invariant.** At least one of `brandName` / `logoUrl` must be set at all times, so there's always something
+to show. Enforced in `services/siteSettings.service.js` before every write, and backstopped by a CHECK
+constraint for anything that bypasses it.
+
+**Routes** (`/api/site-settings`). Only the first is public; the rest need an ADMIN or SUPER_ADMIN token.
+
+| Route         | Notes                                                                                              |
+| ------------- | --------------------------------------------------------------------------------------------------- |
+| `GET /`       | public. `{ brandName, logoUrl, updatedAt }`                                                         |
+| `PUT /`       | `{ brandName }` (string or null). 422 if this would clear the name with no logo already set         |
+| `POST /logo`  | multipart, field `logo`. Same type/size rules as car photos (JPEG/PNG/WebP, up to 5 MB, one file). Replaces any existing logo file |
+| `DELETE /logo`| 422 if there's no brand name to fall back on                                                        |
+
+`logoStorageKey` (which file to delete on replace/remove) is internal and never returned by the API.
+
 ## Project layout
 
 ```

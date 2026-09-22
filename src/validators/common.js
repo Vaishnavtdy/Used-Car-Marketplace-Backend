@@ -23,6 +23,32 @@ const idParam = z.object({
   id: z.coerce.number().int().positive(),
 });
 
+// Image URLs: an absolute http(s) URL without credentials, or a file served from this API's
+// /uploads directory. Anything else (javascript:, data:, protocol-relative, ...) is rejected.
+const isImageUrl = (value) => {
+  if (value.startsWith("/uploads/")) {
+    return /^\/uploads\/[A-Za-z0-9._\-/]+$/.test(value) && !value.includes("..");
+  }
+  try {
+    const url = new URL(value);
+    return (
+      (url.protocol === "https:" || url.protocol === "http:") &&
+      url.hostname !== "" &&
+      url.username === "" &&
+      url.password === ""
+    );
+  } catch {
+    return false;
+  }
+};
+
+const imageUrl = z
+  .string()
+  .trim()
+  .min(1, "Required")
+  .max(2048)
+  .refine(isImageUrl, "Must be an http(s) URL or an /uploads/ path");
+
 const paginationQuery = ({ defaultLimit = 20, maxLimit = 100 } = {}) =>
   z.object({
     page: z.coerce.number().int().min(1).default(1),
@@ -35,4 +61,14 @@ const atLeastOneField = (schema) =>
     message: "At least one field is required",
   });
 
-module.exports = { email, password, name, phone, idParam, paginationQuery, atLeastOneField };
+module.exports = {
+  email,
+  password,
+  name,
+  phone,
+  idParam,
+  paginationQuery,
+  atLeastOneField,
+  isImageUrl,
+  imageUrl,
+};
