@@ -12,6 +12,13 @@ const STATUS_TRANSITIONS = {
   REJECTED: [],
 };
 
+// What a non-admin may ever see. SOLD stays visible (marked "Sold Out" on the frontend) rather
+// than vanishing the moment it sells, same as any marketplace keeps a sold listing up for a while
+// instead of 404ing it. DRAFT / EXPIRED / REJECTED are unpublished: they look like they don't
+// exist to anyone but the seller/an admin. Counts and facets (below) stay ACTIVE-only regardless —
+// those represent *available* inventory, not "visible" listings.
+const PUBLIC_STATUSES = ["ACTIVE", "SOLD"];
+
 const FUEL_TYPES = ["PETROL", "DIESEL", "CNG", "LPG", "ELECTRIC", "HYBRID"];
 const TRANSMISSIONS = ["MANUAL", "AUTOMATIC"];
 const BODY_TYPES = ["SEDAN", "SUV", "HATCHBACK", "COUPE", "WAGON"];
@@ -139,9 +146,11 @@ const buildWhere = (f) => {
   };
 };
 
-// publicOnly forces ACTIVE regardless of any status filter, so the public list can never expose drafts.
+// publicOnly forces the public statuses regardless of any status filter, so the public list can
+// never expose a draft (there is no status filter on the public query anyway; "manage" is the one
+// that takes one, and only for admins).
 const list = async ({ page, limit, sort, ...filters }, { publicOnly }) => {
-  const where = { ...buildWhere(filters), ...(publicOnly && { status: "ACTIVE" }) };
+  const where = { ...buildWhere(filters), ...(publicOnly && { status: { in: PUBLIC_STATUSES } }) };
 
   const [cars, total] = await prisma.$transaction([
     prisma.car.findMany({
@@ -157,10 +166,10 @@ const list = async ({ page, limit, sort, ...filters }, { publicOnly }) => {
   return { items: cars.map(serializeSummary), pagination: pageInfo({ page, limit, total }) };
 };
 
-// Non-admins only see ACTIVE listings; anything else looks like it doesn't exist.
+// Non-admins only see published listings (ACTIVE or SOLD); anything else looks like it doesn't exist.
 const getById = async (id, { includeAllStatuses }) => {
   const car = await prisma.car.findFirst({
-    where: { id, ...(!includeAllStatuses && { status: "ACTIVE" }) },
+    where: { id, ...(!includeAllStatuses && { status: { in: PUBLIC_STATUSES } }) },
     select: detailSelect,
   });
   if (!car) throw ApiError.notFound("Car not found");

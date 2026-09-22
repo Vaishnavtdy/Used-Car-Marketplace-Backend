@@ -73,9 +73,9 @@ Create brands before adding cars. `npm run seed:demo-cars` adds the brands its d
 
 | Route                                | Access | Notes                                                              |
 | ------------------------------------ | ------ | ------------------------------------------------------------------ |
-| `GET /`                              | public | ACTIVE only; filters, sort, pagination                             |
-| `GET /facets`                        | public | Filter options with counts, over ACTIVE cars (see below)           |
-| `GET /:id`                           | public | Non-ACTIVE cars are visible to admins only                         |
+| `GET /`                              | public | ACTIVE or SOLD; filters, sort, pagination                          |
+| `GET /facets`                        | public | Filter options with counts, over ACTIVE cars only (see below)      |
+| `GET /:id`                           | public | ACTIVE or SOLD; DRAFT/EXPIRED/REJECTED are visible to admins only  |
 | `GET /manage`                        | admin  | All statuses; adds `status`, `sellerId` filters                    |
 | `POST /`                             | admin  | Creates a DRAFT owned by the caller                                |
 | `PATCH /:id`                         | admin  | Content fields only                                                |
@@ -98,6 +98,12 @@ Only the detail response has `features`, `engine`, `power` and `description`; li
 
 `GET /facets` returns `{ total, brands: [{ id, name, count, image }], fuelTypes, transmissions, bodyTypes, cities: [{ value, count }], models: [{ brand, model }] }`,
 which the storefront uses for its filter panel and search menus (`image` is a photo of a featured or the newest car of the brand).
+
+**SOLD stays public; DRAFT/EXPIRED/REJECTED don't.** A car that sells keeps its page and keeps showing up in
+`GET /` — the frontend marks it "Sold Out" rather than the listing just vanishing (a shared link, a favourite,
+should still resolve). Unpublishing (moving back to DRAFT, or EXPIRED/REJECTED) does make it disappear from both
+routes, exactly as before. `GET /facets` and the Home Page CMS's car counts are unaffected either way: both are
+hardcoded to `status: "ACTIVE"` because they represent buyable inventory, not "does a page exist for this car".
 
 A photo may live at an external URL (`storageKey` is then empty and there is no file to delete), which is how the demo cars work.
 
